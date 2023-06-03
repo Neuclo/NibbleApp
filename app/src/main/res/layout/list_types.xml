@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="1sp"
+    android:layout_marginBottom="1sp"
+    android:layout_marginLeft="1sp"
+    android:layout_marginRight="1sp"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:padding="20dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/mas_oscuro">
+
+    <TextView
+        android:id="@+id/nombre_cocina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola"
+
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/white"/>
+
+</androidx.cardview.widget.CardView>

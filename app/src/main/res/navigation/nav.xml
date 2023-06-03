@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/reserva">
+
+    <fragment android:id="@+id/reserva"
+        android:name="com.example.tfc.FragmentInicio"
+        tools:layout="@layout/fragment_inicio"/>
+
+    <fragment android:id="@+id/pedido"
+        android:name="com.example.tfc.FragmentReservas"
+        tools:layout="@layout/fragment_reservas"/>
+
+</navigation>

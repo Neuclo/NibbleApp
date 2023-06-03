@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentInicio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_textview"
+            android:orientation="horizontal"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/titleDescubre"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Inicio"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:completionThreshold="1"
+                android:imeOptions="actionDone"
+                android:padding="5dp"
+                android:layout_gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="#808080"
+                android:textColorHighlight="@color/white"
+                android:textSize="14sp"
+                android:hint="'Italiana', 'Americana', 'Libanesa'..."
+                android:dropDownSelector="@color/menos_oscuro" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1sp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/splashScreenContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

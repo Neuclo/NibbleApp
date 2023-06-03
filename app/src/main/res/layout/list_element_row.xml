@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="1dp"
+    android:layout_marginLeft="1dp"
+    app:cardBackgroundColor="#0C3765"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagenRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_marginBottom="4sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:scaleX="0.7"
+                android:scaleY="0.9"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="0"
+                android:layout_gravity="start"
+                android:progressTint="@color/yellow"/>
+
+            <TextView
+                android:id="@+id/valoracion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="0.0"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/description_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/mas_oscuro"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10sp">
+
+                <Button
+                    android:id="@+id/botonReservar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/mitad_oscuro"
+                    android:drawableEnd="@drawable/reserva"
+                    android:text="Reserva"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    tools:ignore="SmallSp" />
+
+                <Button
+                    android:id="@+id/botonMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/mitad_oscuro"
+                    android:drawableEnd="@drawable/menu"
+                    android:text="Menú"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    tools:ignore="SmallSp" />
+
+                <Button
+                    android:id="@+id/botonLlamar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/mitad_oscuro"
+                    android:drawableEnd="@drawable/call"
+                    android:text="Llamar"
+                    android:textSize="7sp"
+                    android:textColor="@color/black"
+                    tools:ignore="SmallSp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

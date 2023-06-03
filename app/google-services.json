@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "409422506099",
+    "project_id": "nibble-app-definitivo",
+    "storage_bucket": "nibble-app-definitivo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409422506099:android:0950ecebe0b6e8dde52206",
+        "android_client_info": {
+          "package_name": "com.example.tfc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409422506099-91uomcm4er9shoouk8t3dklqmplq3usi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgmShQukH5F42AOF1ceY4JNgEmAv0YaZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409422506099-91uomcm4er9shoouk8t3dklqmplq3usi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
